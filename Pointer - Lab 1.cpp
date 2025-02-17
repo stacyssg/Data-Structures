@@ -19,14 +19,14 @@ int main() {
     int* ptr = nullptr;
     ptr = &number;
     // Step 3: Print the value of number using the variable and the pointer    
-    cout << "Variable: " << number << endl;
-    cout << "Pointer: " << *ptr << endl;
+    cout << "Value of number (using variable): " << number << endl;
+    cout << "Value of number (using pointer): : " << *ptr << endl;
     // Step 4: Modify the value of number to 20 using the pointer
     *ptr = 20;
     // Step 5: Print the modified value of number using the variable and the pointer
     cout << endl;
-    cout << "Variable: " << number << endl;
-    cout << "Pointer: " << * ptr << endl;
+    cout << "Modified value of number (using variable): : " << number << endl;
+    cout << "Modified value of number (using pointer): " << * ptr << endl;
     /*
      Section 2 Activities
      */
@@ -36,12 +36,12 @@ int main() {
     // Step 2: Assign the value 30 to the allocated memory
         *dynPtr = 10;
     // Step 3: Print the value stored in the dynamically allocated memory
-    cout << *dynPtr << endl;
+    cout << "Value in dynamically allocated memory: " * dynPtr << endl;
     // Step 4: Deallocate the memory and set the pointer to nullptr    
     delete dynPtr;
     dynPtr = nullptr;
     // Step 5: Print a message confirming the memory deallocation
-    cout << "Memory has been deallocated." << endl;
+    cout << "Memory has been successfully deallocated." << endl;
     cout << endl;
 
     /*
@@ -66,6 +66,6 @@ int main() {
     delete[] arrayPtr;
     arrayPtr = nullptr;
     // Step 5: Print a message confirming the memory deallocation
-    cout << "Memory has been deallocated." << endl;
+    cout << "Array memory has been successfully deallocated." << endl;
     return 0;
 }
