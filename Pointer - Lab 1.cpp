@@ -13,15 +13,20 @@ int main() {
      */
     cout << "Section 1" << endl;
     // Step 1: Declare and initialize integer variable
+    int number = 10;
 
     // Step 2: Declare pointer and initialize it with the address of number
-
+    int* ptrNumber = nullptr;
+    ptrNumber = &number;
     // Step 3: Print the value of number using the variable and the pointer    
-
+    cout << number << endl;
+    cout << *ptrNumber << endl;
     // Step 4: Modify the value of number to 20 using the pointer
-
+    *ptrNumber = 20;
     // Step 5: Print the modified value of number using the variable and the pointer
     cout << endl;
+    cout << number << endl;
+    cout << *ptrNumber << endl;
     /*
      Section 2 Activities
      */
@@ -56,4 +61,3 @@ int main() {
 
     return 0;
 }
-
